@@ -1,6 +1,6 @@
 twii
 ===
-===
+===	
 
 
 A Simple client Server application demonstrating Twitter like system
@@ -99,13 +99,22 @@ DB Schema
 		| timestamp | datetime     | NO   |     | NULL    |                |
 		+-----------+--------------+------+-----+---------+----------------+
 
-	mysql> select * from twii_post;
-		+----+---------+-----------------------+---------------------+
-		| id | user_id | body                  | timestamp           |
-		+----+---------+-----------------------+---------------------+
-		|  1 |       1 | this is a sample post | 2013-09-03 22:54:48 |
-		+----+---------+-----------------------+---------------------+
-		1 row in set (0.00 sec)
+	mysql> mysql> select * from twii_post;
+		+----+---------+------------------------------------------------------+---------------------+
+		| id | user_id | body                                                 | timestamp           |
+		+----+---------+------------------------------------------------------+---------------------+
+		|  1 |       1 | this is a sample post                                | 2013-09-03 22:54:48 |
+		|  2 |       1 | yet another tweet                                    | 2013-09-03 23:45:17 |
+		|  3 |       1 | it is a beautiful day                                | 2013-09-03 23:45:31 |
+		|  4 |       2 | Saw rainbow today                                    | 2013-09-03 23:45:47 |
+		|  5 |       3 | tiring trip to berkley adn return back. Took 3 hours | 2013-09-03 23:46:15 |
+		|  6 |       3 | Fedrer loses USOPEN chance                           | 2013-09-03 23:46:40 |
+		|  7 |       4 | Fedrer loses USOPEN chance                           | 2013-09-03 23:46:46 |
+		|  8 |       5 | Fedrer loses USOPEN chance                           | 2013-09-03 23:46:51 |
+		|  9 |       5 | Awesome weather in seattle today                     | 2013-09-03 23:47:05 |
+		| 10 |       2 | Looking forward to thursday night football           | 2013-09-03 23:47:30 |
+		+----+---------+------------------------------------------------------+---------------------+
+		10 rows in set (0.00 sec)
 		
 Operations supported
 ====================
