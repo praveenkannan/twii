@@ -1,0 +1,6 @@
+CREATE TABLE `twii_post` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	`user_id` INT NOT NULL ,
+	`body` VARCHAR( 140 ) NOT NULL ,
+	`timestamp` DATETIME NOT NULL
+) ENGINE = MYISAM ;
